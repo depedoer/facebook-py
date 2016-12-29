@@ -1,0 +1,7 @@
+# facebook-py
+The following python program uses a "fancy" trick to check people who you have close relation to on Facebook. Using this code, you can see who has been interacting with your Facebook profile and who on Facebook you have been interacting with most. This code accesses a list compiled by the server-side Facebook algorithm which contains people that Facebook puts specific friends in the chat bar at the side of the screen. Because Facebook places many people who have the most interaction with you in your friends chat list, we can access this list and check who has a close relation to you and your profile online. 
+
+This Python program uses Selenium to automate the opening of a browser and navigation to the Facebook site. By putting your credentials (email and password) into the code (<Your email>, <Your password>), the code navigates the browser to your Facebook page. Once on your Facebook page, the DOM is copied into a text file. That text file is searched for the "Chat friends list" object in the DOM. Once located, that object is parsed id by id. By copying and appending each id into the URL, the code navigates to each friend's profile, grabs the friend's name from the DOM, and outputs each name into the fb-info.txt file. This file maintains a list of the top 20 friends in that DOM chat list. Note: This number can be altered in the code to include more or less friends. Once the 20 friend limit has been reached, the program quits. 
+
+Created by: Justin Segler and Connor Byron
+Date: April 2016
