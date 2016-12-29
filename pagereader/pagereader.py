@@ -20,10 +20,10 @@ def login(url=BASE_URL):
     browser.get(url)
     
     browser.find_element_by_id('email').clear()
-    browser.find_element_by_id('email').send_keys("justin@djsegler.com")
+    browser.find_element_by_id('email').send_keys("<YOUR EMAIL>")
     
     browser.find_element_by_id('pass').clear()
-    browser.find_element_by_id('pass').send_keys("N2qka@123")
+    browser.find_element_by_id('pass').send_keys("<YOUR PASSWORD>")
     browser.find_element_by_id('pass').submit()
 
 login()
